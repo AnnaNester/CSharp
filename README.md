@@ -1,16 +1,31 @@
 # CSharp
 
-ProjetoCSharp
+ProjetoCSharp <br>
 O sistema tem o intuito de gerenciar atividades de hospital, possibilitando:
 
 - Criar perfil de pacientes
 - Alterar dados de pacientes
 - Excluir dados de pacientes
-- Listar todos os pacientes, listar paciente por nome ou listar por cpf
-- Listar todos os médicos, listar médico por nome, listar médico por especialidade ou listar médico por crm
+- Listar todos os pacientes
+- Listar paciente por nome
+- Listar por cpf
+- Listar todos os médicos
+- Listar médico por nome 
+- Listar médico por especialidade
+- Listar médico por crm
 - Agendar consultas
 - Alterar informações das consultas
 - Excluir informações das consultas
+- Listar consulta por nome
+- Listar consulta por ID
+- Listar consulta por médico
+- Listar consulta por paciente
+- Listar todas as consultas
 - Agendar exames
 - Alterar informações dos exames
 - Excluir informações dos exames
+- Listar exame por nome
+- Listar exame por ID
+- Listar exame por médico
+- Listar exame por paciente
+- Listar todas as exame

@@ -1,14 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Modelos
+﻿namespace Modelos
 {
-    public class Pessoa
+    public interface Pessoa
     {
-        [Required]
         string nome { get; set; }
 
         string endereco { get; set; }
 
-        string datanasc { get; set; }
+        string dataNasc { get; set; }
     }
 }

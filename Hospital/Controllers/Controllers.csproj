@@ -54,7 +54,6 @@
     <Compile Include="IBaseController\IBasePessoaController.cs" />
     <Compile Include="IBaseController\IBaseProcedimentoController.cs" />
     <Compile Include="MedicoController.cs" />
-    <Compile Include="PacienteController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

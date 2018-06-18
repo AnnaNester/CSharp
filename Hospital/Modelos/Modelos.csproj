@@ -50,8 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consulta.cs" />
-    <Compile Include="Exame.cs" />
-    <Compile Include="Paciente.cs" />
     <Compile Include="Procedimento.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Pessoa.cs" />

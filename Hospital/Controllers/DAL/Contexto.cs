@@ -7,15 +7,12 @@ namespace Controllers.DAL
     {
         public Contexto() : base("strConn")
         {
-
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Contexto>());
         }
 
         public DbSet<Medico> Medicos { get; set; }
 
-        public DbSet<Paciente> Pacientes { get; set; }
-
         public DbSet<Consulta> Consultas { get; set; }
-
 
     }
 }

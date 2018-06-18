@@ -14,10 +14,10 @@ namespace Controllers.IBaseController
 
         IList<T> ListarPorMedico(string nome);
 
-        IList<T> ListarPorID(int id);
+       T BuscarPorID(int id);
 
         void Atualizar (T entity);
 
-        void Excluir (string chave);
+        void Excluir (int id);
     }
 }

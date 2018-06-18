@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Modelos
 {
@@ -9,13 +8,13 @@ namespace Modelos
 
         public string endereco { get; set; }
 
-        [Required, MaxLength(50)]
+        [Required, StringLength(50)]
         public string nome { get; set; }
 
         [Key]
-        string crm { get; set; }
+        public string crm { get; set; }
 
-        [Required, MaxLength(50)]
-        string especialidadeMedico { get; set; }
+        [Required, StringLength(50)]
+        public string especialidadeMedico { get; set; }
     }
 }

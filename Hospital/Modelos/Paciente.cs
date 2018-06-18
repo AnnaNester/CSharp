@@ -1,6 +1,0 @@
-﻿namespace Modelos
-{
-    class Paciente
-    {
-    }
-}

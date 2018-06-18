@@ -17,5 +17,8 @@ namespace Modelos
 
         [Required]
         public string paciente { get; set; }
+
+        [Required]
+        public string especialidade { get; set; }
     }
 }

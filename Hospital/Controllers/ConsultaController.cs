@@ -1,7 +1,6 @@
 ﻿namespace Controllers
 {
-    public class PessoaController
+    class ConsultaController
     {
-
     }
 }

@@ -49,17 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultaController.cs" />
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="IBaseController\IBasePessoaController.cs" />
     <Compile Include="IBaseController\IBaseProcedimentoController.cs" />
-    <Compile Include="PessoaController.cs" />
+    <Compile Include="MedicoController.cs" />
+    <Compile Include="PacienteController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DAL\" />
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{037DD8E1-6D6C-4CBC-AAAF-E1CC60C79BD2}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

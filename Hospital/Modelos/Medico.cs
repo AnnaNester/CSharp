@@ -9,11 +9,13 @@ namespace Modelos
 
         public string endereco { get; set; }
 
+        [Required, MaxLength(50)]
         public string nome { get; set; }
 
         [Key]
-        int crm { get; set; }
+        string crm { get; set; }
 
+        [Required, MaxLength(50)]
         string especialidadeMedico { get; set; }
     }
 }

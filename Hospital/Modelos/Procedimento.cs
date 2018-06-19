@@ -8,8 +8,8 @@
 
         string horario { get; set; }
 
-        string paciente { get; set; }
+        Paciente paciente { get; set; }
 
-        string medico { get; set; }
+        Medico medico { get; set; }
     }
 }

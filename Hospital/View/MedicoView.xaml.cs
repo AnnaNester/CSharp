@@ -5,16 +5,17 @@ namespace View
     /// <summary>
     /// Interaction logic for Medico.xaml
     /// </summary>
-    public partial class Medico : Window
+    public partial class MedicoView : Window
     {
-        public Medico()
+        public MedicoView()
         {
             InitializeComponent();
         }
 
         private void Cadastrar_Click(object sender, RoutedEventArgs e)
         {
-            
+            CadastroMedico cadmed = new CadastroMedico();
+            cadmed.Show();
         }
     }
 }

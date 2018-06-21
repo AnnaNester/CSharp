@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Modelos;
+using System.Collections.Generic;
 
 namespace Controllers.IBaseController
 {
@@ -10,9 +11,9 @@ namespace Controllers.IBaseController
 
         IList<T> ListarPorNome (string nome);
 
-        IList<T> ListarPorPaciente (string nome);
+        IList<T> ListarPorPaciente (Paciente paciente);
 
-        IList<T> ListarPorMedico(string nome);
+        IList<T> ListarPorMedico(Medico medico);
 
        T BuscarPorID(int id);
 

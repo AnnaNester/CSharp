@@ -31,15 +31,15 @@ namespace Controllers
 
         public void Excluir(string chave)
         {
-            IList<Medico> m = BuscarPorCrm(chave);
-            {
-                if (m != null)
-                {
-                    contexto.Medicos.Remove(m);
+            //IList<Medico> m = BuscarPorCrm(chave);
+            //{
+            //    if (m != null)
+            //    {
+            //        contexto.Medicos.Remove(m);
 
-                    contexto.SaveChanges();
-                }
-            }
+            //        contexto.SaveChanges();
+            //    }
+            //}
         }
 
         public IList<Medico> ListarPorNome(string nome)

@@ -11,9 +11,9 @@ namespace Controllers.IBaseController
 
         IList<T> ListarPorNome (string nome);
 
-        IList<T> ListarPorPaciente (Paciente paciente);
+        IList<T> ListarPorPaciente (string chave);
 
-        IList<T> ListarPorMedico(Medico medico);
+        IList<T> ListarPorMedico(string chave);
 
        T BuscarPorID(int id);
 

@@ -42,9 +42,9 @@ namespace Controllers
             }
         }
 
-        public IList<Consulta> ListarPorMedico(Medico medico)
+        public IList<Consulta> ListarPorMedico(string chave)
         {
-            return contexto.Consultas.Where(m => m.medico.ToLower() == nome.ToLower()).ToList();
+            return contexto.Consultas.Where(m => m.medico_crm == chave).ToList();
         }
 
         public IList<Consulta> ListarPorNome(string nome)
@@ -52,9 +52,9 @@ namespace Controllers
             return contexto.Consultas.Where(c => c.nome.ToLower() == nome.ToLower()).ToList();
         }
 
-        public IList<Consulta> ListarPorPaciente(Paciente paciente)
+        public IList<Consulta> ListarPorPaciente(string chave)
         {
-            return contexto.Consultas.Where(p => p.paciente.ToLower() == nome.ToLower()).ToList();
+            return contexto.Consultas.Where(p => p.paciente_cpf == chave).ToList();
         }
 
         public IList<Consulta> ListarTodos()

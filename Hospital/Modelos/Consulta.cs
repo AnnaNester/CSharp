@@ -17,13 +17,13 @@ namespace Modelos
         [Required]
         public string especialidade { get; set; }
 
-        Paciente paciente { get; set; }
+        public virtual Paciente paciente { get; set; }
 
-        Medico medico { get; set; }
+        public virtual Medico medico { get; set; }
 
-        public int medicoID { get; set; }
+        public string medico_crm { get; set; }
 
-        public int pacienteID { get;  set; }
+        public string paciente_cpf { get;  set; }
 
     }
 }

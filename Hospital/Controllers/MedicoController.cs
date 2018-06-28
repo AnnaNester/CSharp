@@ -24,22 +24,15 @@ namespace Controllers
             contexto.SaveChanges();
         }
 
-        public IList<Medico> BuscarPorCrm(string chave)
+        public Medico BuscarPorCrm(string chave)
         {
-            return contexto.Medicos.Where(m => m.crm == chave).ToList();
+            return contexto.Medicos.FirstOrDefault(m => m.crm == chave);
         }
 
-        public void Excluir(string chave)
+        public void Excluir(Medico medico)
         {
-            //IList<Medico> m = BuscarPorCrm(chave);
-            //{
-            //    if (m != null)
-            //    {
-            //        contexto.Medicos.Remove(m);
-
-            //        contexto.SaveChanges();
-            //    }
-            //}
+            contexto.Medicos.Remove(medico);
+            contexto.SaveChanges();
         }
 
         public IList<Medico> ListarPorNome(string nome)

@@ -1,0 +1,16 @@
+﻿<Window x:Class="HospitalView.MedicoPesquisar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalView"
+        mc:Ignorable="d"
+        Title="Pesquisar Médico" Height="400" Width="600">
+    <Grid>
+        <Button x:Name="btnBuscaCRM" Content="Buscar CRM" HorizontalAlignment="Left" Margin="241,55,0,0" VerticalAlignment="Top" Width="144" Height="27"/>
+        <Button x:Name="btnListarTodos" Content="Listar Todos" HorizontalAlignment="Left" Margin="241,114,0,0" VerticalAlignment="Top" Width="144" Height="27"/>
+        <Button x:Name="btnBuscarNome" Content="Buscar por Nome" HorizontalAlignment="Left" Margin="241,175,0,0" VerticalAlignment="Top"  Width="144" Height="27"/>
+        <Button x:Name="btnBuscarEspecialidade" Content="Buscar por Especialidade" HorizontalAlignment="Left" Margin="241,237,0,0" VerticalAlignment="Top" Width="144" Height="27"/>
+
+    </Grid>
+</Window>

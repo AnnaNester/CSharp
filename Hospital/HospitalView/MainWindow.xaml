@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Início" Height="400" Width="600">
     <Grid>
-        <Button x:Name="btnMedico" Content="Medico" HorizontalAlignment="Left" Margin="232,60,0,0" VerticalAlignment="Top" Width="120" Height="42" Click="btnMedico_Click"/>
+        <Button x:Name="btnMedico" Content="Médico" HorizontalAlignment="Left" Margin="232,60,0,0" VerticalAlignment="Top" Width="120" Height="42" Click="btnMedico_Click"/>
         <Button x:Name="btnPaciente" Content="Paciente" HorizontalAlignment="Left" Margin="232,140,0,0" VerticalAlignment="Top" Width="120" Height="42"/>
         <Button x:Name="btnConsulta" Content="Consulta" HorizontalAlignment="Left" Margin="232,226,0,0" VerticalAlignment="Top" Width="120" Height="42"/>
 

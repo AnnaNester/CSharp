@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="Medico" Height="400" Width="600">
     <Grid>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="229,39,0,0" VerticalAlignment="Top" Width="120" Height="42" Click="btnCadastrar_Click"/>
-        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="229,122,0,0" VerticalAlignment="Top" Width="120" Height="42"/>
-        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="229,202,0,0" VerticalAlignment="Top" Width="120" Height="42"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="229,107,0,0" VerticalAlignment="Top" Width="120" Height="42" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnPesquisar" Content="Pesquisar" HorizontalAlignment="Left" Margin="229,202,0,0" VerticalAlignment="Top" Width="120" Height="42" Click="btnPesquisar_Click"/>
 
     </Grid>
 </Window>

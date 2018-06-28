@@ -29,5 +29,11 @@ namespace HospitalView
             CadastrarMedico cadmed = new CadastrarMedico();
             cadmed.Show();
         }
+
+        private void btnPesquisar_Click(object sender, RoutedEventArgs e)
+        {
+            MedicoPesquisar pesqmed = new MedicoPesquisar();
+            pesqmed.Show();
+        }
     }
 }

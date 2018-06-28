@@ -17,7 +17,5 @@ namespace Modelos
         [Required, StringLength(50)]
         public string especialidadeMedico { get; set; }
 
-        [Required, StringLength(15)]
-        public string senha { get; set; }
     }
 }

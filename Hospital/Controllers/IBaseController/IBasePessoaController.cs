@@ -12,6 +12,6 @@ namespace Controllers.IBaseController
 
         void Atualizar(T entity);
 
-        void Excluir(string chave);
+        void Excluir(T entity);
     }
 }

@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="Cadastro" Height="400" Width="600">
     <Grid>
-        
+        <Label x:Name="label" Content="Cadastro Médico" HorizontalAlignment="Left" Margin="241,10,0,0" VerticalAlignment="Top" Height="55" Width="157" FontSize="18"/>
+        <TextBox x:Name="txtCrm" HorizontalAlignment="Left" Height="23" Margin="34,79,0,0" TextWrapping="Wrap" Text="Informe seu CRM" VerticalAlignment="Top" Width="120" Opacity="0.8"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="34,200,0,0" TextWrapping="Wrap" Text="Digite seu nome" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="334,79,0,0" TextWrapping="Wrap" Text="Digite seu endereço" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
+        <TextBox x:Name="txtEspecialidade" HorizontalAlignment="Left" Height="23" Margin="334,145,0,0" TextWrapping="Wrap" Text="Digite sua especialidade" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
+        <Label x:Name="CRM" Content="CRM:" HorizontalAlignment="Left" Margin="34,48,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="DataNasc" Content="Data de Nascimento:" HorizontalAlignment="Left" Margin="34,119,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Nome" Content="Nome:" HorizontalAlignment="Left" Margin="34,174,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="Endereco" Content="Endereço:" HorizontalAlignment="Left" Margin="334,48,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Especialidade" Content="Especialidade:" HorizontalAlignment="Left" Margin="334,119,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="343,256,0,0" VerticalAlignment="Top" Width="87" Click="btnSalvar_Click"/>
+        <TextBox x:Name="txtDataNasc" HorizontalAlignment="Left" Height="23" Margin="34,145,0,0" TextWrapping="Wrap" Text="Data Nascimento:" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged" Opacity="0.8"/>
+
     </Grid>
 </Window>

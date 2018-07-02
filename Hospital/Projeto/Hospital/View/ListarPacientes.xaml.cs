@@ -1,18 +1,8 @@
 ﻿using Controllers;
+using Hospital;
 using Modelos;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace HospitalView
 {
@@ -28,23 +18,33 @@ namespace HospitalView
 
         private void btnAlterar_Click(object sender, RoutedEventArgs e)
         {
-            Paciente paciente = (Paciente)GridPacientes.Items[GridPacientes.SelectedIndex];
-            if (paciente.PacienteID > 0)
+            try
             {
-                AlterarPaciente tela = new AlterarPaciente(paciente);
-                tela.Show();
+                Paciente paciente = (Paciente)GridPacientes.Items[GridPacientes.SelectedIndex];
+                if (paciente.PacienteID > 0)
+                {
+                    AlterarPaciente tela = new AlterarPaciente(paciente);
+                    tela.Show();
+                    Close();
+                }
             }
+            catch { }
         }
 
         private void btnExcluir_Click(object sender, RoutedEventArgs e)
         {
-            Paciente paciente = (Paciente)GridPacientes.Items[GridPacientes.SelectedIndex];
-            if (paciente.PacienteID > 0)
+            try
             {
-                PacienteController pacienteController = new PacienteController();
-                pacienteController.Excluir(paciente);
-                MessageBox.Show("Paciente excluído com sucesso!!");
+                Paciente paciente = (Paciente)GridPacientes.Items[GridPacientes.SelectedIndex];
+                if (paciente.PacienteID > 0)
+                {
+                    PacienteController pacienteController = new PacienteController();
+                    pacienteController.Excluir(paciente);
+                    MessageBox.Show("Paciente excluído com sucesso!!");
+                    ExibirPacientes("");
+                }
             }
+            catch { }
         }
 
         private void btnFiltrar_Click(object sender, RoutedEventArgs e)
@@ -54,13 +54,34 @@ namespace HospitalView
                 MessageBox.Show("Digite o que deseja filtrar!!");
                 return;
             }
+            ExibirPacientes(txtFiltro.Text);
         }
 
-        private void ExibirItens(string filtro)
+        private void ExibirPacientes(string filtro)
         {
             PacienteController pacienteController = new PacienteController();
             if (filtro.Length == 0) GridPacientes.ItemsSource = pacienteController.ListarTodos();
             else GridPacientes.ItemsSource = pacienteController.ListarPorNomeCPF(filtro);
+
+            GridPacientes.Columns[0].Visibility = Visibility.Hidden;
+
+            try
+            {
+                for(int tela = 0; tela < 5; tela++) GridPacientes.Columns[tela].IsReadOnly = true;
+            }
+            catch { }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ExibirPacientes("");
+        }
+
+        private void btnInicio_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow tela = new MainWindow();
+            tela.Show();
+            Close();
         }
     }
 }

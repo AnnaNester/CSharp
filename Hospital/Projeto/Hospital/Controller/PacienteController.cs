@@ -25,13 +25,13 @@ namespace Controllers
 
         public void Excluir(Paciente paciente)
         {
-            contexto.Pacientes.Remove(paciente);
+            contexto.Entry(paciente).State = System.Data.Entity.EntityState.Deleted;
             contexto.SaveChanges();
         }
 
         public IList<Paciente> ListarPorNomeCPF(string find)
         {
-            return contexto.Pacientes.Where(a => a.Nome.ToLower() == find.ToLower() || a.CPF == find).ToList();
+            return contexto.Pacientes.Where(a => a.Nome.ToLower().Contains(find.ToLower()) || a.CPF.Contains(find)).ToList();
         }
 
         public IList<Paciente> ListarTodos()

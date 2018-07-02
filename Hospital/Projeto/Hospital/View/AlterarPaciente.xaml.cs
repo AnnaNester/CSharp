@@ -1,4 +1,5 @@
 ﻿using Controllers;
+using Hospital;
 using Modelos;
 using System;
 using System.Collections.Generic;
@@ -47,6 +48,17 @@ namespace HospitalView
             pacienteController.Atualizar(paciente);
 
             MessageBox.Show("Cadastro alterado com sucesso!!");
+
+            ListarPacientes tela = new ListarPacientes();
+            tela.Show();
+            Close();
+        }
+
+        private void btnInicio_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow tela = new MainWindow();
+            tela.Show();
+            Close();
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hospital"
         mc:Ignorable="d"
-        Title="MainWindow" Height="340.795" Width="338.703">
+        Title="Tela Inicial" Height="340.795" Width="338.703">
     <Grid>
         <Button x:Name="btnCadastrar" Content="Cadastrar Paciente" HorizontalAlignment="Left" Margin="126,120,0,0" VerticalAlignment="Top" Width="108" Height="32" Click="btnCadastrar_Click"/>
         <Button x:Name="btnListar" Content="Listar Pacientes" HorizontalAlignment="Left" Margin="126,183,0,0" VerticalAlignment="Top" Width="108" Height="32" Click="btnListar_Click"/>

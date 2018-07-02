@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalView"
         mc:Ignorable="d"
-        Title="AlterarPaciente" Height="298.5" Width="495.5" Loaded="Window_Loaded">
+        Title="Alterar Cadastro" Height="298.5" Width="495.5" Loaded="Window_Loaded">
     <Grid>
         <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="96,167,0,0" TextWrapping="Wrap" Text="Digite seu CPF" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
         <Label x:Name="CPF" Content="CPf:" HorizontalAlignment="Left" Margin="96,141,0,0" VerticalAlignment="Top" Width="50" FontWeight="Bold"/>
@@ -17,6 +17,7 @@
         <TextBox x:Name="txtDataNasc" HorizontalAlignment="Left" Height="23" Margin="256,167,0,0" TextWrapping="Wrap" Text="Data de Nascimento" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
         <Label x:Name="DataNasc" Content="Data de nascimento:" HorizontalAlignment="Left" Margin="256,141,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="200,213,0,0" VerticalAlignment="Top" Width="88" Click="btnSalvar_Click"/>
+        <Button x:Name="btnInicio" Content="Página Inicial" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="98" Click="btnInicio_Click"/>
 
     </Grid>
 </Window>

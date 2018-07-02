@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Controllers;
+using Hospital;
 using Modelos;
 
 namespace HospitalView
@@ -32,6 +33,17 @@ namespace HospitalView
             pacienteController.Cadastrar(paciente);
 
             MessageBox.Show("Paciente cadastrado com sucesso.");
+
+            MainWindow tela = new MainWindow();
+            tela.Show();
+            Close();
+        }
+
+        private void btnInicio_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow tela = new MainWindow();
+            tela.Show();
+            Close();
         }
     }
 }

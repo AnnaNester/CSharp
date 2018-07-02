@@ -41,9 +41,14 @@ namespace HospitalView
 
         private void btnInicio_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow tela = new MainWindow();
-            tela.Show();
-            Close();
+            MessageBoxResult result = MessageBox.Show("Deseja voltar a tela inicial?", "Sair", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if(result == MessageBoxResult.Yes)
+            {
+                MainWindow tela = new MainWindow();
+                tela.Show();
+                Close();
+            }
         }
     }
 }

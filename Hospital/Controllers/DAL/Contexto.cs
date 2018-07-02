@@ -13,6 +13,7 @@ namespace Controllers.DAL
         public DbSet<Medico> Medicos { get; set; }
 
         public DbSet<Consulta> Consultas { get; set; }
+        public DbSet<Paciente> Pacientes { get; set; }
 
     }
 }

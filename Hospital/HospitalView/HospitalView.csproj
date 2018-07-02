@@ -37,11 +37,9 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -68,7 +66,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AlterarPaciente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CadastrarMedico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CadastrarPaciente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,12 +86,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ListarPacientePorCPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarPacientesPorNome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarTodosPacientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="AlterarMedico.xaml.cs">
       <DependentUpon>AlterarMedico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarPaciente.xaml.cs">
+      <DependentUpon>AlterarPaciente.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -94,11 +115,23 @@
     <Compile Include="CadastrarMedico.xaml.cs">
       <DependentUpon>CadastrarMedico.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarPaciente.xaml.cs">
+      <DependentUpon>CadastrarPaciente.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExcluirMedico.xaml.cs">
       <DependentUpon>ExcluirMedico.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarMedico.xaml.cs">
       <DependentUpon>ListarMedico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPacientePorCPF.xaml.cs">
+      <DependentUpon>ListarPacientePorCPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPacientesPorNome.xaml.cs">
+      <DependentUpon>ListarPacientesPorNome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarTodosPacientes.xaml.cs">
+      <DependentUpon>ListarTodosPacientes.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

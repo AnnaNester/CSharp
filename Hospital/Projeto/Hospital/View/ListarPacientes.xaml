@@ -7,9 +7,16 @@
         mc:Ignorable="d"
         Title="ListarPacientesPorNome" Height="450" Width="532.636">
     <Grid>
-        <DataGrid x:Name="GridPacientes" HorizontalAlignment="Left" Height="373" Margin="10,10,0,0" VerticalAlignment="Top" Width="505"/>
-        <Button Content="Alterar Selecionado" HorizontalAlignment="Left" Margin="331,388,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Excluir Selecionado" HorizontalAlignment="Left" Margin="440,388,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid x:Name="GridPacientes" HorizontalAlignment="Left" Height="302" Margin="10,81,0,0" VerticalAlignment="Top" Width="505"/>
+        <Button x:Name="btnAlterar" Content="Alterar Selecionado" HorizontalAlignment="Left" Margin="262,388,0,0" VerticalAlignment="Top" Width="115" Click="btnAlterar_Click" Height="22"/>
+        <Button x:Name="btnExcluir" Content="Excluir Selecionado" HorizontalAlignment="Left" Margin="400,388,0,0" VerticalAlignment="Top" Width="115" Click="btnExcluir_Click" Height="22"/>
+        <TextBox x:Name="txtFiltro" HorizontalAlignment="Left" Height="34" Margin="291,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="18"/>
+        <Button x:Name="btnFiltrar" Content="" HorizontalAlignment="Left" Margin="472,31,0,0" VerticalAlignment="Top" Width="43" Height="34" Click="btnFiltrar_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Hospital;component/Search.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="291,10,0,0" TextWrapping="Wrap" Text="Filtrar por Nome ou CPF:" VerticalAlignment="Top" Width="184" FontSize="16"/>
 
     </Grid>
 </Window>

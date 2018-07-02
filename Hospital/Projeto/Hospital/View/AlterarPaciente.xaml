@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalView"
         mc:Ignorable="d"
-        Title="AlterarPaciente" Height="450" Width="800">
+        Title="AlterarPaciente" Height="298.5" Width="495.5" Loaded="Window_Loaded">
     <Grid>
         <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="96,167,0,0" TextWrapping="Wrap" Text="Digite seu CPF" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
         <Label x:Name="CPF" Content="CPf:" HorizontalAlignment="Left" Margin="96,141,0,0" VerticalAlignment="Top" Width="50" FontWeight="Bold"/>
-        <Label x:Name="label" Content="Cadstro Paciente" HorizontalAlignment="Left" Margin="150,10,0,0" VerticalAlignment="Top" Height="55" Width="186" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Alterar Cadastro" HorizontalAlignment="Left" Margin="159,10,0,0" VerticalAlignment="Top" Height="55" Width="166" FontSize="20" FontWeight="Bold"/>
         <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="256,110,0,0" TextWrapping="Wrap" Text="Digite seu endereço" VerticalAlignment="Top" Width="135" Opacity="0.8"/>
         <Label x:Name="Nome1" Content="Nome:" HorizontalAlignment="Left" Margin="96,84,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
         <Label x:Name="Endereco" Content="Endereço:" HorizontalAlignment="Left" Margin="256,84,0,0" VerticalAlignment="Top" FontWeight="Bold"/>

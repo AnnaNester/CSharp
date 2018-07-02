@@ -1,5 +1,4 @@
-﻿using Controllers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,19 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace HospitalView
+namespace Hospital.View
 {
     /// <summary>
-    /// Lógica interna para ListarPacientePorCPF.xaml
+    /// Lógica interna para MenuListar.xaml
     /// </summary>
-    public partial class ListarPacientePorCPF : Window
+    public partial class MenuListar : Window
     {
-        public ListarPacientePorCPF(string cpf)
+        public MenuListar()
         {
             InitializeComponent();
-
-            PacienteController pacienteController = new PacienteController();
-            GridPacientes.ItemsSource = pacienteController.ListarPorCPF(cpf);
         }
     }
 }
